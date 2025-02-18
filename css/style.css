@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
 body,
 html {
   font: bold 14px/1.4 'Open Sans', arial, sans-serif;
@@ -18,12 +21,20 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 15px 20px;
+  position: sticky;
 
 }
+
+.nav-link.active {
+  color: #a8a8a8; /* Active link color */
+  font-weight: bold; /* Optional: Makes the active link stand out */
+}
+
 
 .logo-container {
 
   flex: 0 0 auto;
+  position: sticky;
 }
 
 ul {
@@ -59,7 +70,7 @@ a:after {
   left: 50%;
   position: absolute;
   background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.5s ease 0s, left 0.5s ease 0s;
   width: 0;
 }
 
@@ -83,7 +94,7 @@ a:hover:after {
 }
 
 .overlay {
-  position: absolute;
+  position: absolute; 
   top: 0;
   left: 0;
   width: 100%;
@@ -98,7 +109,7 @@ a:hover:after {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  color: #e0d5b9;
+  color: #ffe29a;
   text-align: center;
   font-family: Arial, sans-serif;
 }
@@ -106,9 +117,29 @@ a:hover:after {
 h1 {
   font-size: 48px;
   margin: 0;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 p {
   font-size: 24px;
   margin-top: 10px;
+  color:  #dabf7c;  
+  margin: 10px;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
+
+code {
+ background-color: black;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+
